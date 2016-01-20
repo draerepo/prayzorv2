@@ -21,7 +21,7 @@ ul > li{
 }
 
 .playerMargin{
-	margin-bottom: 131px;
+	margin-bottom: 3.5em;
 }
 /*logo*/
 .logo img{
@@ -84,20 +84,23 @@ ul > li{
     margin-left: 0;
 }
 .view-genres > li > a{
-	height: 200px;
+	padding-bottom:1.25em;
 }
 .view-genres > li > a > span {
     display: block;
     font-size: 18px;
-    margin-top: -55px;
+    margin-top: -3.5em;
 }
 
+/*Nav*/
+nav{
+	margin: 3em auto;
+}
+.navigation li a{
+	font-size: 1.5em;
+}
 
 /*Stations*/
-.station-header{
-    padding: 0 2em 2em;
-}
-
 .station-header .station-details{
 	margin-top: -2em;
 }
@@ -116,6 +119,9 @@ ul > li{
 .view-stations .station-name{
 	display: none;
 }
+.station-info__name{
+	font-size: 1.75em;
+}
 
 /*Player Bar*/
 .player-bar {
@@ -126,11 +132,6 @@ ul > li{
     z-index: 2;
 }
 
-.player-container a img {
-    width: 65%;
-    display: block;
-    margin: 0 auto;
-}
 .player-volume-control{
 	display: none;
 }
@@ -138,16 +139,27 @@ ul > li{
 	line-height: 1em;
 }
 ul.view-carousel li > a{
-	width: 600px;
 	display: inline-block;
 	background-color: rgba(255,255,255, 0.7);
 	font-size: 24px;
 }
 
 ul[rn-carousel] {
-    height: 450px;
+    height: 200px;
 }
-.swiper{overflow: hidden;}
+
+.swiper--small ul[rn-carousel]{
+	height: 100px;
+}
+.swiper {
+    overflow: hidden;
+    width: 99.9%;
+    margin: 0 auto;
+}
+
+.carousel-margin{
+	margin: 1em 2em 0;
+}
 /*Slider Bar*/
 
 /* teaching */
@@ -161,22 +173,43 @@ ul[rn-carousel] {
     background: rgba(255,255,255, 0.1);
     display: block;
     color: #fff;
-    font-size: 2em;
     width: 100%;
 }
 .video__listen:hover, .video__link:hover, .video__watch:hover {
     background: rgba(255,255,255, 0.2);
 }
-
-
+.scrollable--bg{
+	background: rgba(0,0,0, 0.4)
+}
+.scrollable__item__title--eliples{
+	width: 100%;
+	padding: 5px;
+	display: block;
+	font-size: .75em;
+}
 
 /* Talk Styles */
-.playlist-view__item--eliples{
+.playlist-view__item--eliples, .categories-view__item--eliple, .scrollable__item__title--eliples{
 	overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+
+/* Video Player*/
+.video{
+	width: 100%;
+	height: 215px;
+}
+
+.scrollableX {
+    overflow-x: scroll;
+}
+
+.scrollable__item {
+    width: 175px;
+    display: inline-block;
+}
 /*Mobile*/
 @media only screen and (max-device-width: 767px) {
 	
@@ -190,11 +223,14 @@ ul[rn-carousel] {
 	}
 	.station-header .station-details {
 	    margin: 0;
-	    padding: 2em;
+	    padding: 2em 0;
 	}
 	.view-stations .light-box, .speaker-bar{
 		background: none;
 		min-height: auto;
+	}
+	.view-stations .light-box{
+		padding: 1em;		
 	}	
 	.view-stations > li{
 		border-bottom: solid #eee 1px;
@@ -204,18 +240,10 @@ ul[rn-carousel] {
 	}
 	.station-header{
 		padding: 0;
-	}
-
-	.view-stations .dummyImage, .view-stations .speaker-bar > img{
-		width: 75px;
-		height: 75px;		
+		min-height: 120px;
 	}
 	.dummyImage{
 		background: rgba(255,255,255, 0.7);
-	}
-	.station-info .dummyImage, .player-play-pause{
-		width: 115px;
-		height: 115px;
 	}
 	.break-on-mobile{
 		display: block;
@@ -250,7 +278,7 @@ ul[rn-carousel] {
 		height: auto
 	}
 	.player-view-large .previous, .player-view-large .forward{
-		margin-top: 60px;
+		margin-top: 2em;
 	}
 
 	

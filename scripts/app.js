@@ -1,6 +1,6 @@
 // (function(){
 	var app = angular.module('app', [
-	  'ngRoute', 'ngTouch', 'angular-carousel'
+	  'ngRoute', 'ngTouch', 'angular-carousel', 'ngAudio'
 	]);
 
 	app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
