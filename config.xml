@@ -16,18 +16,8 @@
     <author href="" >
         Sevengage
     </author>
-        
-    <access origin="*" />
-        
-<platform name="ios" >
-    <preference name="orientation" value="portrait" />
-</platform>
-<preference name="target-device" value="universal" />
-<preference name="prerendered-icon" value="true" />
-<preference name="deployment-target" value="1.0" />
 
-<platform name="android" >
-  <preference name="orientation" value="portrait" />
-</platform>
+        
+        <access origin="*" />
 
 </widget>
