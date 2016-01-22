@@ -17,6 +17,8 @@
         Sevengage
     </author>
         
+    <access origin="*" />
+        
 <platform name="ios" >
     <preference name="orientation" value="portrait" />
 </platform>
